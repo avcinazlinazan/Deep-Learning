@@ -12,6 +12,9 @@ for line in lines:
     cv2.line(img,(x1,y1),(x2,y2),(0,225,255),3)
 
 
+output_h_line = "output_line.jpg"
+success = cv2.imwrite(output_h_line, img)
+
 
 
 cv2.imshow("gray",gray)
